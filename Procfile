@@ -1,1 +1,1 @@
-web: gunicorn Run_Web_app:server --preload --timeout 60
+web: python Run_Web_app.py
