@@ -231,11 +231,11 @@ def update_graph12(n_clicks, value, start_date,end_date,my_ticker_symbol):
 
 # In[17]:
 
-port = int(os.environ.get('PORT', 5000)) 
+#port = int(os.environ.get('PORT', 5000)) 
 
 if __name__ == "__main__":
     #app.run_server(port=8017)
-    app.server.run(host='0.0.0.0', port=port)
+    app.server.run(host= '0.0.0.0', port=environ.get('PORT'))
 
 
 # In[ ]:
